@@ -1,0 +1,171 @@
+/* Estilos globais e do header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#d3cfcf;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #000000;
+}
+
+/* Estilo para o título da promoção */
+.titulo-promocao {
+    text-align: center;
+    font-size: 2.5em;
+    color: #de113a;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.neon {
+    font-family: 'Arial', sans-serif;
+    font-size: 72px;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Menu Hamburguer */
+.menu-toggle {
+    display: none;
+}
+
+.hamburguer {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Estilo do menu */
+#menu {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Exibir o menu quando o checkbox estiver marcado */
+.menu-toggle:checked + .hamburguer + #menu {
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #f8f6f6;
+    color: #000000;
+}
+
+.scroll-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.gravata-item {
+    width: 200px;
+    padding: 5px;   
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color:#cecbcb;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.gravata-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gravata-item h2 {
+    font-size: 0.9em;
+    margin: 10px 0 5px;
+    overflow-wrap: break-word;
+}
+    
+
+.gravata-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    color: white;
+    background-color: #25d366;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.hamburguer span {
+    background: #333;
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+/* Seção de Contato */
+.contato {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+/* Estilo para a aba de promoção */
+.promocao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagem-promocao {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 1200px;
+    height: 500px;
+}
